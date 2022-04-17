@@ -44,7 +44,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/vLog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/edit_style"
@@ -55,28 +55,27 @@
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:textColorHint="@color/white"
-            app:layout_constraintBottom_toBottomOf="@id/editTextTextPassword"
+            app:layout_constraintBottom_toBottomOf="@id/vPass"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textView"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatEditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/vPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/edit_style"
             android:ems="14"
             android:hint="Введите пароль"
-            android:inputType="number"
-            android:minLines="8"
+            android:maxLength="8"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
             android:textColorHint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/vLog"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton

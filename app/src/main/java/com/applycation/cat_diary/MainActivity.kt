@@ -18,8 +18,12 @@ class MainActivity : AppCompatActivity() {
 
 
         buttonSingIn.setOnClickListener {
-            if (!(!(vLog.text.isNotEmpty() && vPass.text.isNotEmpty()) ||
-                        (vLog.text.length < 5)) && (vPass.text.length > 5)){ moveToNextScreen() }
+//            if (!(!(vLog.text.isNotEmpty() && vPass.text.isNotEmpty()) ||
+//                        (vLog.text.length < 5)) && (vPass.text.length > 5)){ moveToNextScreen() }
+
+//            when {
+//                (vLog.text.isBlank()) ->
+//            }
         }
 
 

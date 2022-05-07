@@ -5,17 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
+import android.widget.ImageView
 
-class MainActivity : AppCompatActivity() {
+class RegistrationWindow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.registration_window)
 
         val vLog: EditText = findViewById(R.id.vLog)
         val vPass: EditText = findViewById(R.id.vPass)
         val buttonSingIn: Button = findViewById(R.id.sing_in)
 
+        class ImageLogo() {
+            val logo: ImageView = findViewById(R.id.logo)
+
+        }
 
         buttonSingIn.setOnClickListener {
 //            if (!(!(vLog.text.isNotEmpty() && vPass.text.isNotEmpty()) ||
@@ -35,4 +39,6 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+
+
 }

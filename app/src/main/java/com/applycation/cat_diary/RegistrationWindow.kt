@@ -16,10 +16,6 @@ class RegistrationWindow : AppCompatActivity() {
         val vPass: EditText = findViewById(R.id.vPass)
         val buttonSingIn: Button = findViewById(R.id.sing_in)
 
-        class ImageLogo() {
-            val logo: ImageView = findViewById(R.id.logo)
-
-        }
 
         buttonSingIn.setOnClickListener {
 //            if (!(!(vLog.text.isNotEmpty() && vPass.text.isNotEmpty()) ||
